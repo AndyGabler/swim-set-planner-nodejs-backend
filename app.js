@@ -9,7 +9,7 @@ app.use(bodyParser.json());
 app.use(cors())
 
 mongoose.Promise = global.Promise;
-mongoose.connect("mongodb://localhost:27017/SwimSetPlanner", { useNewUrlParser: true }).then(
+mongoose.connect("mongodb://localhost:27017/SwimSetPlanner").then(
   () => {console.log('Database is connected') },
   err => { console.log('Can not connect to the database'+ err)});
 
