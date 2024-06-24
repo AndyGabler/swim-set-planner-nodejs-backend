@@ -1,0 +1,240 @@
+[
+  {
+    "id": 1,
+    "dateScheduled": "2024-06-03",
+    "order": 1,
+    "scheduledSet": {
+      "id": 12,
+      "repLength": 100,
+      "repCount": 5,
+      "name": "5x100s free",
+      "description": "5 reps of 100 yards of freestyle. This is a good warm up set.",
+      "labels": [
+        "Full Body",
+        "Warmup"
+      ]
+    }
+  },
+  {
+    "id": 2,
+    "dateScheduled": "2024-06-03",
+    "order": 2,
+    "scheduledSet": {
+      "id": 1,
+      "repLength": 150,
+      "repCount": 6,
+      "name": "6x150s free",
+      "description": "6 reps of 150 yards of freestyle",
+      "labels": [
+        "Full Body",
+        "Endurance"
+      ]
+    }
+  },
+  {
+    "id": 3,
+    "dateScheduled": "2024-06-03",
+    "order": 3,
+    "scheduledSet": {
+      "id": 3,
+      "repLength": 25,
+      "repCount": 10,
+      "name": "10x25s free kick",
+      "description": "10 reps of 25 yards of freestyle kick with board",
+      "labels": [
+        "Legs"
+      ]
+    }
+  },
+  {
+    "id": 4,
+    "dateScheduled": "2024-06-03",
+    "order": 4,
+    "scheduledSet": {
+      "id": 21,
+      "repLength": 25,
+      "repCount": 4,
+      "name": "4x25s free, one-breath",
+      "description": "4 reps of 25 yards of freestyle. One breath or no breath.",
+      "labels": [
+        "Breathing",
+        "Cooldown"
+      ]
+    }
+  },
+  {
+    "id": 5,
+    "dateScheduled": "2024-06-04",
+    "order": 1,
+    "scheduledSet": {
+      "id": 12,
+      "repLength": 100,
+      "repCount": 5,
+      "name": "5x100s free",
+      "description": "5 reps of 100 yards of freestyle. This is a good warm up set.",
+      "labels": [
+        "Full Body",
+        "Warmup"
+      ]
+    }
+  },
+  {
+    "id": 6,
+    "dateScheduled": "2024-06-04",
+    "order": 2,
+    "scheduledSet": {
+      "id": 27,
+      "repLength": 100,
+      "repCount": 10,
+      "name": "10x100s IM",
+      "description": "10 reps of 100 yards of IM. This means 25 yards of butterfly, then back stroke, then breast stroke, then freestyle. This is a good warm up set.",
+      "labels": [
+        "Full Body",
+        "Endurance",
+        "Warmup"
+      ]
+    }
+  },
+  {
+    "id": 7,
+    "dateScheduled": "2024-06-04",
+    "order": 3,
+    "scheduledSet": {
+      "id": 21,
+      "repLength": 25,
+      "repCount": 4,
+      "name": "4x25s free, one-breath",
+      "description": "4 reps of 25 yards of freestyle. One breath or no breath.",
+      "labels": [
+        "Breathing",
+        "Cooldown"
+      ]
+    }
+  },
+  {
+    "id": 8,
+    "dateScheduled": "2024-06-05",
+    "order": 1,
+    "scheduledSet": {
+      "id": 12,
+      "repLength": 100,
+      "repCount": 5,
+      "name": "5x100s free",
+      "description": "5 reps of 100 yards of freestyle. This is a good warm up set.",
+      "labels": [
+        "Full Body",
+        "Warmup"
+      ]
+    }
+  },
+  {
+    "id": 9,
+    "dateScheduled": "2024-06-05",
+    "order": 2,
+    "scheduledSet": {
+      "id": 2,
+      "repLength": 25,
+      "repCount": 10,
+      "name": "10x25s breast kick",
+      "description": "10 reps of 25 yards of breaststroke kick with board",
+      "labels": [
+        "Legs"
+      ]
+    }
+  },
+  {
+    "id": 10,
+    "dateScheduled": "2024-06-05",
+    "order": 3,
+    "scheduledSet": {
+      "id": 20,
+      "repLength": 75,
+      "repCount": 10,
+      "name": "10x75s free, no turn breathing",
+      "description": "10 reps of 75 yards of freestyle. No breathing between the flags and the wall.",
+      "labels": [
+        "Full Body",
+        "Breathing"
+      ]
+    }
+  },
+  {
+    "id": 11,
+    "dateScheduled": "2024-06-05",
+    "order": 4,
+    "scheduledSet": {
+      "id": 21,
+      "repLength": 25,
+      "repCount": 4,
+      "name": "4x25s free, one-breath",
+      "description": "4 reps of 25 yards of freestyle. One breath or no breath.",
+      "labels": [
+        "Breathing",
+        "Cooldown"
+      ]
+    }
+  },
+  {
+    "id": 12,
+    "dateScheduled": "2024-06-07",
+    "order": 1,
+    "scheduledSet": {
+      "id": 12,
+      "repLength": 100,
+      "repCount": 5,
+      "name": "5x100s free",
+      "description": "5 reps of 100 yards of freestyle. This is a good warm up set.",
+      "labels": [
+        "Full Body",
+        "Warmup"
+      ]
+    }
+  },
+  {
+    "id": 13,
+    "dateScheduled": "2024-06-07",
+    "order": 2,
+    "scheduledSet": {
+      "id": 3,
+      "repLength": 25,
+      "repCount": 10,
+      "name": "10x25s free kick",
+      "description": "10 reps of 25 yards of freestyle kick with board",
+      "labels": [
+        "Legs"
+      ]
+    }
+  },
+  {
+    "id": 14,
+    "dateScheduled": "2024-06-07",
+    "order": 3,
+    "scheduledSet": {
+      "id": 9,
+      "repLength": 200,
+      "repCount": 5,
+      "name": "5x200s pull",
+      "description": "5 reps of 200 yards of freestyle with pull bouy",
+      "labels": [
+        "Arms",
+        "Endurance"
+      ]
+    }
+  },
+  {
+    "id": 15,
+    "dateScheduled": "2024-06-07",
+    "order": 4,
+    "scheduledSet": {
+      "id": 20,
+      "repLength": 75,
+      "repCount": 10,
+      "name": "10x75s free, no turn breathing",
+      "description": "10 reps of 75 yards of freestyle. No breathing between the flags and the wall.",
+      "labels": [
+        "Full Body",
+        "Breathing"
+      ]
+    }
+  }
+]
