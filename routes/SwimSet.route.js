@@ -6,7 +6,7 @@ let SwimSet = require("../model/SwimSet")
 
 // GET route for all swim sets
 swimSetRoutes.route('/').get(function (request, response) {
-    SwimSet.find()
+    SwimSet.find(request.query)
         .then(results => {
             response.status(200).json(results)
         })
