@@ -19,6 +19,10 @@ swimSetRoutes.route('/').get(function (request, response) {
 // POST route for updates and insertions
 swimSetRoutes.route('/').post(function (request, response) {
     let inputSwimSet = new SwimSet(request.body)
+    if (inputSwimSet.id && inputSwimSet.id <= 0) {
+        response.status(400).json({ "message" : "id must be positive" })
+        return
+    }
     SwimSet.findOne({ 'id': inputSwimSet.id })
         .then(existingSet => {
             let updateSet = existingSet

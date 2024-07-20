@@ -14,7 +14,9 @@ mongoose.connect("mongodb://localhost:27017/SwimSetPlanner").then(
   err => { console.log('Can not connect to the database'+ err)});
 
 const swimSetRoute = require('./routes/SwimSet.route');
+const scheduledSetRoute = require('./routes/ScheduledSet.route')
 app.use('/swimsets', swimSetRoute);
+app.use('/setschedule', scheduledSetRoute)
 app.get('/', (request, response) => {
     response.send(
         "Endpoint roster:<br/>" + 
