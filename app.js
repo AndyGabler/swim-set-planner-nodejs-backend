@@ -1,6 +1,7 @@
 const express = require('express')
 const mongoose = require('mongoose')
 const bodyParser = require('body-parser')
+const fs = require("fs");
 const cors = require('cors')
 const app = express()
 const port = 3000
@@ -17,13 +18,13 @@ const swimSetRoute = require('./routes/SwimSet.route');
 const scheduledSetRoute = require('./routes/ScheduledSet.route')
 app.use('/swimsets', swimSetRoute);
 app.use('/setschedule', scheduledSetRoute)
-app.get('/', (request, response) => {
-    response.send(
-        "Endpoint roster:<br/>" + 
-        "/swimsets : Get swim sets<br/>" + 
-        "/scheduledsets : Dates on which swim sets were swam."
-    )
-})
+
+if (fs.existsSync('./swim-planner-frontend')) {
+    app.use('/', express.static('swim-planner-frontend/browser'))
+    console.log("Serving frontend from static content.")
+} else {
+    console.warn("Frontend folder not found and will not be served.")
+}
 
 app.listen(port, () => {
     console.log(`App listening on port ${port}`)
