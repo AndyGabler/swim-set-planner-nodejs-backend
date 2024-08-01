@@ -43,3 +43,6 @@ Thumbs.db
 
 # Ignore the frontend directory
 /swim-planner-frontend
+
+# Ignore session secret
+session-secret

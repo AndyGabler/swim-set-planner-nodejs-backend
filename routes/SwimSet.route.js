@@ -6,6 +6,12 @@ let SwimSet = require("../model/SwimSet")
 
 // GET route for all swim sets
 swimSetRoutes.route('/').get(function (request, response) {
+    if (request.session.usage) {
+        request.session.usage++;
+    } else {
+        request.session.usage = 1;
+    }
+    console.log("session used " + request.session.usage + " times")
     SwimSet.find(request.query)
         .then(results => {
             response.status(200).json(results)
@@ -23,6 +29,7 @@ swimSetRoutes.route('/').post(function (request, response) {
         response.status(400).json({ "message" : "id must be positive" })
         return
     }
+    
     SwimSet.findOne({ 'id': inputSwimSet.id })
         .then(existingSet => {
             let updateSet = existingSet
