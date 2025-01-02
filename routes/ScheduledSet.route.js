@@ -17,7 +17,35 @@ scheduledSetRoutes.route('/').get(function (request, response) {
         });
 });
 
+/*
+ * This route is to find the Max ID. This is likely not the proper way to secure a new ID, which of itself is
+ * probably a result of my Relational database mindset vs MongoDB which is a Document database
+ */
+scheduledSetRoutes.route('/maxId').get(function (request, response) {
+    ScheduledSet
+        .aggregate([
+            {
+                $group : {
+                    _id: null,
+                    maxId: { $max: "$id"}
+                }
+            }
+        ])
+        .then(result => {
+            console.log("MaxID is", result[0].maxId)
+            response.status(200).json({"maxId" : result[0].maxId })
+        })
+        .catch(error => {
+            console.error("Failed to look up the Maximum Scheduled Set ID.", error)
+            response.status(500).json({"message": "Internal server error."})
+        });
+});
+
 const newSetValidation = joi.object({
+    /*
+     * TODO technically, I should change this so if I'm setting ID to max ID, the backend assigns ID.
+     * Inviting the frontend to determine an ID only used in the backend seems silly.
+     */ 
     id: joi.number().required(true),
     dateScheduled: joi.string().length(10).pattern(/\d{4}\-\d{2}\-\d{2}/),
     order: joi.number(),
